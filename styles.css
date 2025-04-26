@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;  /* Blackish background for a sleek dark look */
+    color: #ffffff;  /* White text for readability */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 1000px;  /* Increased max-width for better command fitting */
+    width: 100%;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ff6f91;  /* Soft pink for the heading */
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #ffffff;  /* White text for the paragraph */
+    margin-bottom: 20px;
+  }
+  
+  .command-list {
+    display: flex;
+    justify-content: center; /* Center commands horizontally */
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;  /* Ensures responsiveness */
+  }
+  
+  .command-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;  /* Each column takes up 45% of the space */
+  }
+  
+  .command {
+    background-color: #ffe0ec;  /* Light pink background for command boxes */
+    border-radius: 8px;
+    padding: 20px;  /* Increased padding for better spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word;  /* Ensures long text doesn't overflow */
+  }
+  
+  .command-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ff4d79;  /* Medium pink for command names */
+    word-wrap: break-word;  /* Ensures long command names wrap properly */
+  }
+  
+  .command-description {
+    font-size: 1.1rem;
+    color: #ff8cbf;  /* Lighter pink for descriptions */
+    word-wrap: break-word;  /* Ensures long descriptions wrap properly */
+  }
+  .command-description a {
+    color: #ff8cbf;  /* Change to match the color of your description text */
+    text-decoration: underline;  /* Underline the link */
+  }
+  
+  .command-description a:hover {
+    color: #ff4d79;  /* Optional: change color on hover */
+    text-decoration: underline;  /* Keep the underline on hover */
+  }
+  
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .command-name {
+      font-size: 1.1rem;
+    }
+  
+    .command-description {
+      font-size: 1rem;
+    }
+  
+    .command-column {
+      width: 100%;  /* Stack columns vertically on small screens */
+      margin-bottom: 20px;  /* Add space between stacked columns */
+    }
+  
+    .command {
+      padding: 15px;  /* Adjust padding for smaller screens */
+    }
+  }
+  
