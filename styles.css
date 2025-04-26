@@ -6,81 +6,92 @@
   
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #121212;  /* Blackish background for a sleek dark look */
-    color: #ffffff;  /* White text for readability */
+    background-color: #121212;
+    color: #ffffff;
+    padding: 60px 20px 80px 20px;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     flex-direction: column;
-    padding: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg"><g fill="%23ffe0ec" fill-opacity="0.08"><path d="M40 180c0-30 50-40 80-20 20-30 60-30 80-10 30-10 50 10 50 30 20 10 40 40 30 60H20c-20-20-10-40 20-50z"/><path d="M450 70c0-30 50-40 80-20 20-30 70-30 90-10 40-10 60 10 60 30 20 20 20 50 10 70H430c-20-20-10-40 20-50z"/><path d="M120 430c0-30 50-40 80-20 30-40 90-40 110-10 50-10 70 10 70 30 20 10 40 40 30 60H100c-20-20-10-40 20-50z"/><path d="M540 300c0-20 60-30 90-10 30-40 90-40 110-10 50-10 70 10 70 30 30 20 30 50 10 70H520c-20-20-10-40 20-50z"/></g></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  
+
   .container {
     text-align: center;
-    max-width: 1000px;  /* Increased max-width for better command fitting */
+    max-width: 1000px; 
     width: 100%;
   }
   
   header h1 {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #ff6f91;  /* Soft pink for the heading */
+    color: #ff6f91; 
     margin-bottom: 10px;
   }
   
   header p {
     font-size: 1.2rem;
-    color: #ffffff;  /* White text for the paragraph */
+    color: #ffffff; 
     margin-bottom: 20px;
   }
   
   .command-list {
     display: flex;
-    justify-content: center; /* Center commands horizontally */
+    justify-content: center;
     gap: 20px;
     padding: 10px;
-    flex-wrap: wrap;  /* Ensures responsiveness */
+    flex-wrap: wrap;  
   }
   
   .command-column {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 45%;  /* Each column takes up 45% of the space */
+    width: 45%; 
   }
   
   .command {
-    background-color: #ffe0ec;  /* Light pink background for command boxes */
+    background-color: #ffe0ec; 
     border-radius: 8px;
-    padding: 20px;  /* Increased padding for better spacing */
+    padding: 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    word-wrap: break-word;  /* Ensures long text doesn't overflow */
+    word-wrap: break-word; 
   }
   
   .command-name {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #ff4d79;  /* Medium pink for command names */
-    word-wrap: break-word;  /* Ensures long command names wrap properly */
+    color: #ff4d79; 
+    word-wrap: break-word; 
   }
   
   .command-description {
     font-size: 1.1rem;
-    color: #ff8cbf;  /* Lighter pink for descriptions */
-    word-wrap: break-word;  /* Ensures long descriptions wrap properly */
+    color: #ff8cbf; 
+    word-wrap: break-word; 
   }
   .command-description a {
-    color: #ff8cbf;  /* Change to match the color of your description text */
-    text-decoration: underline;  /* Underline the link */
+    color: #ff8cbf; 
+    text-decoration: underline; 
   }
   
   .command-description a:hover {
-    color: #ff4d79;  /* Optional: change color on hover */
-    text-decoration: underline;  /* Keep the underline on hover */
+    color: #ff4d79; 
+    text-decoration: underline; 
   }
+  .watermark {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #ff8cbf;
+    opacity: 0.7;
+    text-align: center;
+  }
+  
   
   
   @media (max-width: 600px) {
@@ -97,12 +108,12 @@
     }
   
     .command-column {
-      width: 100%;  /* Stack columns vertically on small screens */
-      margin-bottom: 20px;  /* Add space between stacked columns */
+      width: 100%; 
+      margin-bottom: 20px; 
     }
   
     .command {
-      padding: 15px;  /* Adjust padding for smaller screens */
+      padding: 15px; 
     }
   }
   
